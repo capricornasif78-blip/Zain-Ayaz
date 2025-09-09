@@ -15,7 +15,7 @@
         <li><a href="menu.html">Food Menu</a></li>
         <li><a href="book.html">Book</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="reviews.html" class="active">Reviews</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -23,30 +23,22 @@
 
   <section>
     <h2>Customer Reviews</h2>
-    <div id="review-list">
-      <div class="review-card">
-        <p>⭐⭐⭐⭐⭐ Amazing food and ambiance!</p>
-      </div>
+    <div class="review">
+      <p>"The biryani was amazing! Authentic Karachi taste!"</p>
+      <span>- Ali</span>
     </div>
-    <h3>Add Your Review</h3>
-    <form id="reviewForm">
-      <select id="rating" required>
-        <option value="">Rate Us</option>
-        <option>⭐</option>
-        <option>⭐⭐</option>
-        <option>⭐⭐⭐</option>
-        <option>⭐⭐⭐⭐</option>
-        <option>⭐⭐⭐⭐⭐</option>
-      </select>
-      <input type="text" id="reviewText" placeholder="Write your review" required>
-      <button type="submit" class="btn-secondary">Submit</button>
+    <div class="review">
+      <p>"Pizza was delicious and service was quick."</p>
+      <span>- Ayesha</span>
+    </div>
+    <form class="review-form">
+      <textarea placeholder="Write your review..."></textarea>
+      <button type="submit" class="btn">Submit</button>
     </form>
   </section>
 
   <footer>
     <p>© 2025 Zain Ayaz Restaurant</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
