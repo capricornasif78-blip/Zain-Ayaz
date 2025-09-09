@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Menu - Zain Ayaz</title>
+  <title>Gallery - Zain Ayaz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,19 +22,25 @@
   </header>
 
   <section>
-    <h2>Our Food Menu</h2>
-    <div class="menu-grid">
-      <div class="menu-card">
-        <img src="images/item1.jpg" alt="Dish">
-        <h3>Special Dish</h3>
-        <p>Delicious traditional recipe.</p>
-        <span>$12</span>
-      </div>
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/gallery1.jpg" alt="Restaurant Interior" class="gallery-img">
+      <img src="images/gallery2.jpg" alt="Chef Cooking" class="gallery-img">
+      <img src="images/gallery3.jpg" alt="Fine Dining" class="gallery-img">
+      <img src="images/gallery4.jpg" alt="Food Table" class="gallery-img">
     </div>
   </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="close">&times;</span>
+    <img id="lightbox-img" src="">
+  </div>
 
   <footer>
     <p>© 2025 Zain Ayaz Restaurant</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
