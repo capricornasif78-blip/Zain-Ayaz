@@ -13,7 +13,7 @@
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Food Menu</a></li>
-        <li><a href="book.html">Book</a></li>
+        <li><a href="book.html" class="active">Book</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="reviews.html">Reviews</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -22,21 +22,20 @@
   </header>
 
   <section>
-    <h2>Book a Table</h2>
-    <form id="bookingForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <input type="date" required>
-      <input type="time" required>
-      <input type="number" placeholder="Guests" required>
-      <button type="submit" class="btn-primary">Confirm Booking</button>
+    <h2>Book Your Table</h2>
+    <form action="https://wa.me/9238483894" method="get" target="_blank" class="booking-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <input type="number" name="guests" placeholder="Number of Guests" required>
+      <textarea name="notes" placeholder="Special Requests"></textarea>
+      <button type="submit" class="btn">Confirm Booking</button>
     </form>
   </section>
 
   <footer>
     <p>© 2025 Zain Ayaz Restaurant</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
