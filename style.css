@@ -1,16 +1,14 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #FAF9F6;
+  background-color: #FAF9F6;
   color: #2C2C2C;
 }
 
 header {
   background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .navbar {
@@ -19,10 +17,16 @@ header {
   padding: 1rem 2rem;
 }
 
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #A44E3F;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .nav-links a {
@@ -30,99 +34,52 @@ header {
   color: #2C2C2C;
   transition: 0.3s;
 }
-.nav-links a:hover {
+
+.nav-links a:hover, .active {
   color: #D4A373;
 }
 
 .hero {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
+  background: url('images/gallery1.jpg') no-repeat center/cover;
+  color: white;
 }
 
-.btn-primary {
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero-buttons .btn {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.8rem 1.5rem;
   background: #D4A373;
-  padding: 0.75rem 1.5rem;
-  color: white;
-  border-radius: 12px;
+  color: #fff;
+  border-radius: 2rem;
   text-decoration: none;
 }
-.btn-secondary {
+
+.hero-buttons .btn-secondary {
   background: #A44E3F;
-  padding: 0.75rem 1.5rem;
-  color: white;
-  border-radius: 12px;
-  text-decoration: none;
-}
-.btn-whatsapp {
-  background: #25D366;
-  padding: 0.75rem 1.5rem;
-  color: white;
-  border-radius: 12px;
-  text-decoration: none;
 }
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
   padding: 2rem;
 }
+
 .menu-card {
   background: white;
-  border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   text-align: center;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 0.5rem;
-  padding: 1rem;
-}
-.gallery-img {
+.menu-card img {
   width: 100%;
-  border-radius: 12px;
-  cursor: pointer;
-}
-
-/* Lightbox */
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.9);
-  text-align: center;
-}
-.lightbox img {
-  max-width: 90%;
-  max-height: 80%;
-  margin-top: 5%;
-}
-.lightbox #close {
-  position: absolute;
-  top: 20px; right: 40px;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-}
-
-/* Reviews */
-#reviewForm {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 1rem;
-}
-#review-list {
-  padding: 1rem;
-}
-.review-card {
-  background: #fff;
-  padding: 0.5rem;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
+  border-radius: 1rem;
 }
