@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery - Zain Ayaz</title>
+  <title>Food Menu - Zain Ayaz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
       <div class="logo">Zain Ayaz</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Food Menu</a></li>
+        <li><a href="menu.html" class="active">Food Menu</a></li>
         <li><a href="book.html">Book</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="reviews.html">Reviews</a></li>
@@ -22,25 +22,37 @@
   </header>
 
   <section>
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/gallery1.jpg" alt="Restaurant Interior" class="gallery-img">
-      <img src="images/gallery2.jpg" alt="Chef Cooking" class="gallery-img">
-      <img src="images/gallery3.jpg" alt="Fine Dining" class="gallery-img">
-      <img src="images/gallery4.jpg" alt="Food Table" class="gallery-img">
+    <h2>Our Food Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="images/item1.jpg" alt="Biryani">
+        <h3>Biryani</h3>
+        <p>Authentic Karachi style biryani with rich spices.</p>
+        <span>Rs. 450</span>
+      </div>
+      <div class="menu-card">
+        <img src="images/item2.jpg" alt="Pizza">
+        <h3>Cheese Pizza</h3>
+        <p>Wood-fired pizza with fresh mozzarella and basil.</p>
+        <span>Rs. 1200</span>
+      </div>
+      <div class="menu-card">
+        <img src="images/item3.jpg" alt="Burger">
+        <h3>Classic Burger</h3>
+        <p>Juicy beef patty, cheddar cheese, fresh veggies.</p>
+        <span>Rs. 750</span>
+      </div>
+      <div class="menu-card">
+        <img src="images/item4.jpg" alt="Pasta">
+        <h3>Italian Pasta</h3>
+        <p>Creamy Alfredo pasta with parmesan cheese.</p>
+        <span>Rs. 900</span>
+      </div>
     </div>
   </section>
-
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox">
-    <span id="close">&times;</span>
-    <img id="lightbox-img" src="">
-  </div>
 
   <footer>
     <p>© 2025 Zain Ayaz Restaurant</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
