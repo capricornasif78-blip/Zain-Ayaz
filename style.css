@@ -1,0 +1,116 @@
+/* Colors */
+:root {
+  --primary: #D4A373;
+  --accent1: #A44E3F;
+  --accent2: #E6BCCD;
+  --neutral: #2C2C2C;
+  --background: #FAF9F6;
+  --white: #ffffff;
+}
+
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--background);
+  color: var(--neutral);
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--neutral);
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: url('images/hero.jpg') center/cover no-repeat;
+  color: var(--white);
+}
+.cta-buttons a {
+  margin: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+.btn-secondary {
+  background: var(--accent1);
+  color: var(--white);
+}
+.btn-whatsapp {
+  display: inline-block;
+  background: #25D366;
+  color: var(--white);
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* Menu */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+.menu-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.menu-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Reviews */
+.review-card {
+  background: var(--white);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
