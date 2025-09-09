@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #FAF9F6;
+  color: #2C2C2C;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2C2C2C;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: #D4A373;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.btn-primary {
+  background: #D4A373;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+}
+.btn-secondary {
+  background: #A44E3F;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+}
+.btn-whatsapp {
+  background: #25D366;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+.menu-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.gallery-img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  text-align: center;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 5%;
+}
+.lightbox #close {
+  position: absolute;
+  top: 20px; right: 40px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Reviews */
+#reviewForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+#review-list {
+  padding: 1rem;
+}
+.review-card {
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
